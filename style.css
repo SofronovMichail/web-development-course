@@ -178,7 +178,15 @@ h6 {
   margin-top: 0;
   font-weight: 400;
 }
-
+h2 {
+  font-size: 2em;
+}
+h3 {
+  color: rgba(0, 0, 0, 0.4);
+}
+.product-entry h3 {
+  color: #000;
+}
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -189,9 +197,6 @@ body {
 
 a {
   color: #17bebb;
-}
-
-table {
 }
 
 /*LOGO*/
