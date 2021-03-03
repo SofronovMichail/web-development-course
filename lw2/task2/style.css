@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-buttons {
+  width: auto;
+  margin: 5% 0 0 10%;
+}
+button {
+  margin: 1%;
+  border-radius: 0;
+  padding: 10px 5px;
+  font-size: 0.8em;
+}
+.button {
+  border-radius: 3px;
+}
+.button-rounded {
+  border-radius: 20px;
+}
+/* XLarge Default buttons */
+.button-large {
+  font-size: 1em;
+  color: dimgray;
+  background-color: white;
+}
+.button-large.button-filled {
+  background-color: dimgray;
+  color: white;
+}
+/* Large Primary buttons */
+.button-primary {
+  border-color: blueviolet;
+  color: blueviolet;
+}
+.button-primary.button-filled {
+  background: blueviolet;
+  color: white;
+}
+/* Large Success buttons */
+.button-success {
+  border-color: limegreen;
+  color: limegreen;
+}
+.button-success.button-filled {
+  background-color: limegreen;
+  color: white;
+}
+/* Medium Info buttons */
+.button-medium {
+  border-color: deepskyblue;
+  color: deepskyblue;
+  font-size: 0.75em;
+}
+.button-medium.button-filled {
+  background-color: deepskyblue;
+  color: white;
+}
+/* Small Warning buttons */
+.button-warning {
+  font-size: 0.7em;
+  border-color: darkorange;
+  color: darkorange;
+  padding: 9px 4px;
+}
+.button-warning.button-filled {
+  background-color: darkorange;
+  color: white;
+}
+/* X-Small buttons */
+.button-red {
+  font-size: 0.7em;
+  border-color: red;
+  color: red;
+  padding: 8px 5px;
+}
+.button-red.button-filled {
+  background-color: red;
+  color: white;
+}
