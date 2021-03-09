@@ -274,3 +274,24 @@ body {
   flex-grow: 0;
   margin: 0px 8px;
 }
+.body-dark {
+  background: #121212;
+}
+.header-title-white {
+  color: #ffffff;
+}
+.header-text-white {
+  color: rgba(255, 255, 255, 0.8);
+}
+.row-item-horizontal-dark {
+  background: #121212;
+}
+.row-item-img-dark {
+  background: url(img/image2.png);
+}
+.row-item-header-white {
+  color: #ffffff;
+}
+.row-item-description-white {
+  color: rgba(255, 255, 255, 0.8);
+}
