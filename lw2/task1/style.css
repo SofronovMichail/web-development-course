@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "Josefin Sans Bold";
-  src: url(fonts/Josefin\ Sans\ Bold.ttf);
-}
-@font-face {
   font-family: "Josefin Sans Regular";
   src: url(fonts/Josefin\ Sans\ Regular.ttf);
 }
@@ -11,51 +7,38 @@
   padding: 0;
 }
 body {
+  font-family: "Josefin Sans Regular";
+}
+.layout-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 40px;
   position: relative;
   width: 1440px;
   height: 880px;
   background: #ffffff;
+  margin: auto;
 }
 .section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 40px;
-  position: static;
   width: 1360px;
   height: 184px;
-  left: 40px;
-  top: 80px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 80px 0px;
 }
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  position: static;
   width: 607px;
   left: 376.5px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 12px 0px;
 }
 .header-title {
-  position: static;
   width: 161px;
   height: 88px;
-  left: 0px;
-  top: 0px;
-  font-family: "Josefin Sans Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 86px;
@@ -63,18 +46,12 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   color: #121212;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0px 16px;
 }
 .header-title-underline {
-  position: static;
   width: 430px;
   height: 88px;
   left: 16px;
-  top: 0px;
-  font-family: "Josefin Sans Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 86px;
@@ -82,9 +59,6 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   color: #121212;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0px 32px;
   background: linear-gradient(
     180deg,
@@ -93,153 +67,82 @@ body {
   );
 }
 .header-text {
-  position: static;
   width: 652px;
   height: 84px;
   left: 354px;
   top: 100px;
-  font-family: "Josefin Sans Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   color: #414141;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 12px 0px;
 }
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  position: static;
+  align-items: center;
+  justify-content: center;
   width: 1304.01px;
   height: auto;
   left: 67.99px;
   top: 344px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 80px 0px;
 }
 .row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  position: static;
-  width: 1304.01px;
-  height: 208px;
-  left: 0px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 40px 0px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 1324.01px;
+  height: 456px;
+  margin-bottom: 40px;
 }
-.row-item {
+.row-program-list {
+  background: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
-  position: static;
   width: 644.01px;
   height: 208px;
-  left: 0px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 16px;
+  margin-right: 16px;
 }
-.row-item-horizontal {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  position: static;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px;
-}
-.row-item-img {
+.row-program-img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  position: static;
   width: 208px;
   height: 208px;
-  left: 0px;
-  top: 0px;
-  background: url(img/image1.png);
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 0px 0px;
 }
-.row-item-content {
+.row-program-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 24px;
-  position: static;
   width: 436px;
   height: 208px;
-  left: 0px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 0px 0px;
 }
-.row-item-content-text {
+.row-program-content-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  position: static;
   width: 388px;
   height: 207px;
   left: 24px;
-  top: 0px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
-.row-item-content-text-header {
+.row-program-content-header {
   width: 388px;
   height: 40px;
-  left: 0px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  font-family: "Josefin Sans Bold";
+
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
   line-height: 40px;
 }
-.row-item-content-text-description {
+.row-program-content-description {
   width: 388px;
   height: 96px;
-  left: 0px;
   top: 52px;
-  font-family: "Josefin Sans Regular";
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -247,34 +150,24 @@ body {
   display: flex;
   align-items: center;
   color: #414141;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
   margin: 12px 0px;
 }
-.row-item-content-button {
+.row-program-content-button {
   padding: 8px 12px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
   background: #ec6041;
   box-shadow: 4px 4px 0px #f1876f, 8px 8px 0px #f5ae9e;
-  font-family: "Josefin Sans Bold";
+
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  text-decoration: none;
   line-height: 20px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 0px 8px;
 }
-.body-dark {
+.layout-container-dark {
   background: #121212;
 }
 .header-title-white {
@@ -283,15 +176,12 @@ body {
 .header-text-white {
   color: rgba(255, 255, 255, 0.8);
 }
-.row-item-horizontal-dark {
+.row-program-list-dark {
   background: #121212;
 }
-.row-item-img-dark {
-  background: url(img/image2.png);
-}
-.row-item-header-white {
+.row-program-content-header-white {
   color: #ffffff;
 }
-.row-item-description-white {
+.row-program-content-description-white {
   color: rgba(255, 255, 255, 0.8);
 }
