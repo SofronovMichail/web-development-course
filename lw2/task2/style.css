@@ -3,78 +3,90 @@
   padding: 0;
 }
 .container-buttons {
-  width: auto;
-  margin: 5% 0 0 10%;
-}
-button {
-  margin: 1%;
-  border-radius: 0;
-  padding: 10px 5px;
-  font-size: 0.8em;
+  margin: 40px;
 }
 .button {
-  border-radius: 3px;
+  margin: 10px 0 20px 20px;
 }
-.button-rounded {
-  border-radius: 20px;
+.button.button-rounded {
+  border-radius: 70px;
 }
 /* XLarge Default buttons */
-.button-large {
-  font-size: 1em;
+.button.button-large {
+  width: 200px;
+  height: 70px;
+  font-size: 1.7em;
   color: dimgray;
   background-color: white;
+  border: 3px solid dimgray;
 }
-.button-large.button-filled {
+.button.button-large.button-filled {
   background-color: dimgray;
   color: white;
 }
 /* Large Primary buttons */
-.button-primary {
-  border-color: blueviolet;
+.button.button-primary {
+  width: 160px;
+  height: 60px;
+  border: 3px solid blueviolet;
   color: blueviolet;
+  font-size: 1.4em;
 }
-.button-primary.button-filled {
+.button.button-primary.button-filled {
   background: blueviolet;
   color: white;
 }
 /* Large Success buttons */
-.button-success {
-  border-color: limegreen;
+.button.button-success {
+  width: 155px;
+  height: 55px;
+  border: 3px solid limegreen;
   color: limegreen;
+  font-size: 1.3em;
 }
-.button-success.button-filled {
+.button.button-success.button-filled {
   background-color: limegreen;
   color: white;
 }
 /* Medium Info buttons */
-.button-medium {
-  border-color: deepskyblue;
+.button.button-medium {
+  width: 130px;
+  height: 50px;
+  border: 3px solid deepskyblue;
   color: deepskyblue;
-  font-size: 0.75em;
+  font-size: 1.2em;
 }
-.button-medium.button-filled {
+.button.button-medium.button-filled {
   background-color: deepskyblue;
   color: white;
 }
 /* Small Warning buttons */
-.button-warning {
-  font-size: 0.7em;
-  border-color: darkorange;
+.button.button-warning {
+  width: 120px;
+  height: 45px;
+  border: 3px solid darkorange;
   color: darkorange;
-  padding: 9px 4px;
+  font-size: 1em;
 }
-.button-warning.button-filled {
+.button.button-warning.button-filled {
   background-color: darkorange;
   color: white;
 }
 /* X-Small buttons */
-.button-red {
-  font-size: 0.7em;
+.button.button-red {
+  width: 70px;
+  height: 40px;
   border-color: red;
   color: red;
-  padding: 8px 5px;
+  font-size: 0.9em;
 }
-.button-red.button-filled {
+.button.button-red.button-filled {
   background-color: red;
   color: white;
+}
+.row :nth-child(3) {
+  border-radius: 5px;
+}
+.row :nth-child(4) {
+  border-radius: 5px;
 }
