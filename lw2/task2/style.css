@@ -16,12 +16,12 @@
   width: 200px;
   height: 70px;
   font-size: 1.7em;
-  color: dimgray;
+  color: rgb(117, 112, 117);
   background-color: white;
-  border: 3px solid dimgray;
+  border: 3px solid rgb(117, 112, 117);
 }
 .button.button-large.button-filled {
-  background-color: dimgray;
+  background: rgb(117, 112, 117);
   color: white;
 }
 /* Large Primary buttons */
