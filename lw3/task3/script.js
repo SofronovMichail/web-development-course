@@ -37,14 +37,6 @@ var MusicPlayer = {
     // 1. song1.mp3
     // 2. song2.mp3 - играет сейчас
     // 3. song3.mp3
-    for (let i = 0; i < this.trackList.length; i++) {
-      this.trackList[this.trackList.indexOf(this.currentTrack)];
-      console.log();
-    }
-
-    // this.trackList.forEach(function (item, i, trackList) {
-    //   this.trackList[this.trackList.indexOf(this.currentTrack)];
-    // });
   },
 };
 
