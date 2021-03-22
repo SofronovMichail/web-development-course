@@ -32,14 +32,15 @@ var MusicPlayer = {
     this.status = "play";
   },
   showTracks: function () {
-    // TODO: вывести в console.log список треков
-    // в формате:
-    // 1. song1.mp3
-    // 2. song2.mp3 - играет сейчас
-    // 3. song3.mp3
+    this.trackList.forEach(function (item, i) {
+      if (item === MusicPlayer.currentTrack) {
+        console.log(`${i + 1}. ${item}` + " - играет сейчас");
+      } else {
+        console.log(`${i + 1}. ${item}`);
+      }
+    });
   },
 };
-
 // MusicPlayer.display(); // "Track: song1.mp3, Status: pause"
 // MusicPlayer.play();
 // MusicPlayer.display(); // "Track: song1.mp3, Status: play"
