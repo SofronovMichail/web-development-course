@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Work Sans Medium";
-  src: url(/task1/fonts/WorkSans-Medium.ttf);
+  src: url(fonts/WorkSans-Medium.ttf);
 }
 @font-face {
   font-family: "Work Sans Light";
-  src: url(/task1/fonts/WorkSans-Light.ttf);
+  src: url(fonts/WorkSans-Light.ttf);
 }
 * {
   margin: 0;
@@ -50,13 +50,13 @@ body {
   font-size: 1.3em;
 }
 .title-description {
-  width: 45%;
+  width: 518px;
 }
 .title-size {
-  width: 7%;
+  width: 80px;
 }
 .title-price {
-  width: 13%;
+  width: 148px;
 }
 .table-item {
   height: 180px;
@@ -164,7 +164,7 @@ body {
   justify-content: space-between;
 }
 .result-item {
-  width: 23%;
+  width: 265px;
   height: 100px;
   border: 1px solid #e6e5e5;
   display: flex;
@@ -186,7 +186,7 @@ body {
   justify-content: space-between;
 }
 .conteiner-promocode {
-  width: 74.3%;
+  width: 856px;
 }
 .promo-header {
   margin: 30px;
@@ -204,7 +204,7 @@ body {
   flex-grow: 1;
 }
 .entry-field-button {
-  width: 30%;
+  width: 256px;
   margin: 0;
   background-color: #011548;
   color: white;
@@ -214,7 +214,7 @@ body {
 }
 
 .footer-btn {
-  width: 23%;
+  width: 265px;
   margin-top: 81px;
   display: flex;
   flex-direction: column;
@@ -232,7 +232,7 @@ body {
 .btn-checkout-text {
   height: 65px;
   background-color: #011548;
-  width: 70%;
+  width: 185px;
   margin-right: 3px;
   display: flex;
   justify-content: center;
@@ -240,7 +240,7 @@ body {
   font-family: "Work Sans Light";
 }
 .btn-checkout-img {
-  width: 29%;
+  width: 77px;
   background-color: #011548;
   height: 65px;
   display: flex;
