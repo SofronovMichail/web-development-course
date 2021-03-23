@@ -12,7 +12,7 @@ var MusicPlayer = {
     this.status = "pause";
   },
   next: function () {
-    if (this.trackList.indexOf(this.currentTrack) < 2) {
+    if (this.trackList.indexOf(this.currentTrack) < this.trackList.length - 1) {
       this.currentTrack = this.trackList[
         this.trackList.indexOf(this.currentTrack) + 1
       ];
@@ -32,8 +32,9 @@ var MusicPlayer = {
     this.status = "play";
   },
   showTracks: function () {
-    this.trackList.forEach(function (item, i) {
-      if (item === MusicPlayer.currentTrack) {
+    var t = this;
+    t.trackList.forEach(function (item, i) {
+      if (item === t.currentTrack) {
         console.log(`${i + 1}. ${item}` + " - играет сейчас");
       } else {
         console.log(`${i + 1}. ${item}`);
@@ -44,8 +45,6 @@ var MusicPlayer = {
 // MusicPlayer.display(); // "Track: song1.mp3, Status: pause"
 // MusicPlayer.play();
 // MusicPlayer.display(); // "Track: song1.mp3, Status: play"
-
 // MusicPlayer.next(); // переключает другой трек
 // MusicPlayer.display(); // "Track: song2.mp3, Status: play"
-
 // MusicPlayer.showTracks(); // вывести в консоль список доступных треков
