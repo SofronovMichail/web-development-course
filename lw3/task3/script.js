@@ -32,14 +32,13 @@ var MusicPlayer = {
     this.status = "play";
   },
   showTracks: function () {
-    var t = this;
-    t.trackList.forEach(function (item, i) {
-      if (item === t.currentTrack) {
-        console.log(`${i + 1}. ${item}` + " - играет сейчас");
+    for (i = 0; i < this.trackList.length; i++) {
+      if (this.trackList[i] === this.currentTrack) {
+        console.log(`${i + 1}. ${this.trackList[i]}` + " - играет сейчас");
       } else {
-        console.log(`${i + 1}. ${item}`);
+        console.log(`${i + 1}. ${this.trackList[i]}`);
       }
-    });
+    }
   },
 };
 // MusicPlayer.display(); // "Track: song1.mp3, Status: pause"
