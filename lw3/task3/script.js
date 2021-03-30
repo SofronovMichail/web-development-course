@@ -57,6 +57,7 @@ var MusicPlayer = {
 
   play: function () {
     this.status = "play";
+    this.stopTimer();
     this.startTimer();
   },
   pause: function () {
