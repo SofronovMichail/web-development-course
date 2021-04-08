@@ -1,3 +1,4 @@
+```
 .container
   .header
     .header-logo
@@ -33,3 +34,4 @@
             .content-cart-bills-content-item_icon
             .content-cart-bills-content-item_text
             .content-cart-bills-content-item_status .content-cart-bills-content-item_status--unpaid
+```
