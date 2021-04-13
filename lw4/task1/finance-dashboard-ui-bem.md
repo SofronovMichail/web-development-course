@@ -1,37 +1,41 @@
 ```
 .container
   .header
-    .header-logo
-    .header-title
-    .header-alert
+    .header_logo
+    .header-text
+      .header-text_title
+      .header-text_subtitle
+    .header_alert
     .header-account
       .header-account_photo
       .header-account_menu .header-account_menu--collapse
   .content
-    .content-menu
+    .content-sidebar
+      .content-sidebar-menu
+        .content-sidebar-menu_item
     .content-cart
-      .content-cart-profile
-        .content-cart-profile_photo
-        .content-cart-profile-content
-          .content-cart-profile-content_title
-          .content-cart-profile-content_info
-          .content-cart-profile-content_radio
-          .content-cart-profile-content_button
-      .content-cart-accounts
-        .content-cart-accounts-header
-          .content-cart-accounts-header_title
-          .content-cart-accounts-header_search
-          .content-cart-accounts-header_edit
-        .content-cart-accounts-item
-          .content-cart-accounts-item_text
-          .content-cart-accounts-item_button .content-cart-accounts-item_button--blocked
-      .content-cart-bills
-        .content-cart-bills-header
-          .content-cart-bills-header_text
-          .content-cart-bills-header_filter
-        .content-cart-bills-content
-          .content-cart-bills-content-item
-            .content-cart-bills-content-item_icon
-            .content-cart-bills-content-item_text
-            .content-cart-bills-content-item_status .content-cart-bills-content-item_status--unpaid
+      .cart--profile-edit-form
+        .profile-edit-form_photo
+        .profile-edit-form_title
+        .profile-edit-form-content
+          .profile-edit-form-content_info
+          .profile-edit-form-content_radio
+          .profile-edit-form-content_button
+      .cart--accounts
+        .cart--accounts-header
+          .accounts-header_title
+          .accounts-header_search
+          .accounts-header_edit
+        .accounts-item
+          .accounts-item_text
+          .accounts-item_button .accounts-item_button--blocked
+      .cart--bills
+        .cart--bills-header
+          .bills-header_text
+          .bills-header_filter
+        .bills-content
+          .bills-content-item
+            .bills-content-item_icon
+            .bills-content-item_text
+            .bills-content-item_status .bills-content-item_status--unpaid
 ```
