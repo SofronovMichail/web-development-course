@@ -1,4 +1,4 @@
-var Сashbox = {
+var Cashbox = {
   amount: 0,
   operationHistory: [],
   validation: function (findings) {
@@ -54,13 +54,10 @@ var Сashbox = {
       );
     });
   },
-  // TODO: вернуть в строчном формате историю операций (пример):
-  // 1. 21.03.2021 18:45 - платеж на 200 руб, операция: Оплата штрафа
-  // 2. 22.04.2021 10:20 - возврат 10 руб, операция: Оплата ЖКХ
 };
 
-// Сashbox.addPayment({ amount: -10, info: "Оплата штрафа" }); // show error (console), amount not affected
-// Сashbox.addPayment({ amount: 10, info: "Оплата ЖКХ" }); // cashbox amount = 10
+// Cashbox.addPayment({ amount: -10, info: "Оплата штрафа" }); // show error (console), amount not affected
+// Cashbox.addPayment({ amount: 10, info: "Оплата ЖКХ" }); // cashbox amount = 10
 
-// Сashbox.refundPayment({ amount: 10, info: "Возврат клиенту" }); // cashbox amount = 0
-// Сashbox.refundPayment({ amount: 10, info: "Возврат клиенту" }); // cashbox amount not affected (warning)
+// Cashbox.refundPayment({ amount: 10, info: "Возврат клиенту" }); // cashbox amount = 0
+// Cashbox.refundPayment({ amount: 10, info: "Возврат клиенту" }); // cashbox amount not affected (warning)
