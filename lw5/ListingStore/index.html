@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="listing-store.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <div class="app">
     <div class="listing-block">
-      <p>Listing:</p>
-      <select size="10" class="listing-select">
+      <p class="listing-total" listing>Listing:</p>
+      <select size="10" class="listing-select select">
       </select>
     </div>
 
     <div class="store-block">
-      <p>Store:</p>
-      <select size="10" class="store-select">
+      <p class="store-total">Store:</p>
+      <select size="10" class="store-select select">
       </select>
     </div>
   </div>
@@ -32,7 +32,10 @@
   <button id="delete-button">
     Delete element
   </button>
-  <script src="js/script.js"></script>
+  <button id="add-new-button">
+    Add new element
+  </button>
+  <script src="listing-store.js"></script>
 </body>
 
 </html>

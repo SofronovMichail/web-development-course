@@ -20,11 +20,24 @@ window.onload = function () {
     }
   }
   function deleteElements(element) {
-    var elementPosition1 = listingElements.indexOf(element);
-    var elementPosition2 = storeElements.indexOf(element);
-    if (elementPosition > -1) {
-      listingElements.splice(elementPosition, 1);
-      storeElements.splice(elementPosition, 1);
+    var elementPositionListing = listingElements.indexOf(element.textContent);
+    if (elementPositionListing > -1) {
+      listingElements.splice(elementPositionListing, 1);
+    }
+    var elementPositionStore = storeElements.indexOf(element.textContent);
+    if (elementPositionStore > -1) {
+      storeElements.splice(elementPositionStore, 1);
+    }
+  }
+  function addNewElements() {
+    var elemName = prompt('Enter name of the item');
+    listingElements.push(elemName);
+  }
+  function updateTotalElements(element, id) {
+    if (id === 'listing') {
+      element.textContent = `Listing (${listingElements.length}):`;
+    } else if (id === 'store') {
+      element.textContent = `Store (${storeElements.length}):`;
     }
   }
 
@@ -34,6 +47,12 @@ window.onload = function () {
     var listingSelect = document.querySelector('.listing-select');
     storeSelect.innerHTML = '';
     listingSelect.innerHTML = '';
+
+    // вставка количества элементов
+    var totalListing = document.querySelector('.listing-total');
+    var totalStore = document.querySelector('.store-total');
+    updateTotalElements(totalListing, 'listing');
+    updateTotalElements(totalStore, 'store');
 
     // вставка элементов из Listing
     for (var i = 0; i < listingElements.length; i++) {
@@ -59,7 +78,8 @@ window.onload = function () {
     addToStoreElements(selectedOptionListing.innerText);
     updateUI();
   };
-  // событие для кнопки "Add to store"
+
+  // событие для кнопки "Add to Listing"
   var addStoreButton = document.querySelector('#add-store-button');
   addStoreButton.onclick = function () {
     var selectedOptionStore = document.querySelector(
@@ -68,17 +88,23 @@ window.onload = function () {
     addToListingElements(selectedOptionStore.innerText);
     updateUI();
   };
+
   // событие для кнопки "Delete element"
-  var deleteButton = document.querySelector('#add-store-button');
-  addStoreButton.onclick = function () {
-    var selectedOptionStore = document.querySelector(
-      '.store-select option:checked'
-    );
-    var selectedOptionListing = document.querySelector(
-      '.listing-select option:checked'
-    );
-    deleteElements(selectedOptionStore.innerText);
-    deleteElements(selectedOptionListing.innerText);
+  var deleteButton = document.querySelector('#delete-button');
+  deleteButton.onclick = function () {
+    var selectedOption = document.querySelector('.select option:checked');
+    if (!selectedOption) {
+      console.log('выделите элемент');
+    } else {
+      deleteElements(selectedOption);
+    }
+    updateUI();
+  };
+
+  // событие для кнопки "Add new element"
+  var addNewButton = document.querySelector('#add-new-button');
+  addNewButton.onclick = function () {
+    addNewElements();
     updateUI();
   };
 
