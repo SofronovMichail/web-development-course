@@ -1,11 +1,11 @@
 {
-  "name": "lw5",
+  "name": "task2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "yeah",
+  "main": "listing-store.js",
   "scripts": {
-    "minify-js": "minify listing-store.js -o build/listing-store.min.js",
-    "minify-css": "minify listing-store.css -o build/listing-store.min.css",
+    "minify-css": "minify listing-store.css build/listing-store.min.css",
+    "minify-js": "minify listing-store.js build/listing-store.min.js",
     "copy-html": "copyfiles index.html build",
     "build": "npm-run-all copy-html minify-js minify-css"
   },

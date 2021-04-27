@@ -75,16 +75,19 @@ window.onload = function () {
     var selectedOptionListing = document.querySelector(
       '.listing-select option:checked'
     );
+    console.log(selectedOptionListing);
     addToStoreElements(selectedOptionListing.innerText);
     updateUI();
   };
 
   // событие для кнопки "Add to Listing"
   var addStoreButton = document.querySelector('#add-store-button');
+  console.log(addStoreButton);
   addStoreButton.onclick = function () {
     var selectedOptionStore = document.querySelector(
       '.store-select option:checked'
     );
+    console.log(selectedOptionStore);
     addToListingElements(selectedOptionStore.innerText);
     updateUI();
   };
