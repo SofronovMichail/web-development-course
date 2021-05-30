@@ -1,21 +1,21 @@
 // todo-app - точка входа в приложение
 // регистрируем события
 
-import { addTodo, todos, toggleCompleteTodo } from "./todo-state";
-import { updateTodoList, updateTodoStatCompleted } from "./todo-update";
+import { addTodo, todos, toggleCompleteTodo } from './todo-state.min.js';
+import { updateTodoList, updateTodoStatCompleted } from './todo-update.min.js';
 
 // событие добавление новой задачи в TODO
-const addTodoButton = document.querySelector(".todo-form__button");
+const addTodoButton = document.querySelector('.todo-form__button');
 
 addTodoButton.onclick = function () {
-  const newTodoText = document.querySelector(".todo-form__input").value;
+  const newTodoText = document.querySelector('.todo-form__input').value;
   const todoId = todos.length + 1;
 
   // добавляем новый элемент в состояние
   addTodo({
     id: todoId,
     text: newTodoText,
-    completed: false
+    completed: false,
   });
 
   // обновляем UI с новым состоянием todos
