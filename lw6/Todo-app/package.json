@@ -4,22 +4,19 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "minify-css": "uglifycss src/todo-app.css --output build/todo-app.min.css",
-    "minify-js": "uglifyjs src/todo-app.js -o build/todo-app.min.js",
-    "copy-html": "copyfiles index.html build",
-    "build": "npm-run-all copy-html minify-js minify-css"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.14.4",
-    "copyfiles": "^2.4.1",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.0",
     "postcss-loader": "^5.3.0",
-    "uglify-js": "^3.13.8",
-    "uglifycss": "0.0.29",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
   },
