@@ -1,8 +1,8 @@
 // todo-app - точка входа в приложение
 // регистрируем события
 
-import { addTodo, todos, toggleCompleteTodo } from './todo-state.min.js';
-import { updateTodoList, updateTodoStatCompleted } from './todo-update.min.js';
+import { addTodo, todos, toggleCompleteTodo } from './todo-state.js';
+import { updateTodoList, updateTodoStatCompleted } from './todo-update.js';
 
 // событие добавление новой задачи в TODO
 const addTodoButton = document.querySelector('.todo-form__button');

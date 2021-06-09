@@ -70,23 +70,22 @@ function updateUI() {
 
 // событие для кнопки "Add to store"
 var addListingButton = document.querySelector('#add-listing-button');
-addListingButton.onclick = function () {
+addListingButton.addEventListener('click', function () {
   var selectedOptionListing = document.querySelector(
     '.listing-select option:checked'
   );
   addToStoreElements(selectedOptionListing.innerText);
   updateUI();
-};
-
+});
 // событие для кнопки "Add to Listing"
 var addStoreButton = document.querySelector('#add-store-button');
-addStoreButton.onclick = function () {
+addStoreButton.addEventListener('click', function () {
   var selectedOptionStore = document.querySelector(
     '.store-select option:checked'
   );
   addToListingElements(selectedOptionStore.innerText);
   updateUI();
-};
+});
 
 // событие для кнопки "Delete element"
 var deleteButton = document.querySelector('#delete-button');
