@@ -30,10 +30,13 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
-          'style-loader',
-          'css-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 },
+          },
           {
             loader: 'postcss-loader',
             options: {
@@ -42,7 +45,7 @@ module.exports = {
                   [
                     'postcss-preset-env',
                     {
-                      // Options
+                      config: path.resolve(__dirname, './postcss.config.js'),
                     },
                   ],
                 ],
