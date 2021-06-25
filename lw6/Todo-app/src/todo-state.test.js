@@ -6,7 +6,7 @@ describe('todo-state tests: ', () => {
   });
 
   test('addTodo add element', () => {
-    addTodo({ id: 5, text: 'hello world', completed: false });
+    addTodo({ id: 5, text: 'id5', completed: false });
     expect(todos).toBeTruthy();
     expect(todos.length).toBe(1);
     expect(todos[0]).toEqual({ id: 5, text: 'id5', completed: false });
