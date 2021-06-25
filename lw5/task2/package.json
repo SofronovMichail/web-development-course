@@ -5,10 +5,10 @@
   "main": "listing-store.js",
   "scripts": {
     "test": "jest",
-    "minify-css": "uglifycss listing-store.css --output build/listing-store.min.css",
-    "minify-js": "uglifyjs listing-store.js -o build/listing-store.min.js",
+    "minify-css": "uglifycss listing-store.css --output build/listing-store.css",
+    "minify-js": "uglifyjs listing-store.js -o build/listing-store.js",
     "copy-html": "copyfiles index.html build",
-    "build": "npm-run-all test copy-html minify-js minify-css"
+    "build": "npm-run-all copy-html minify-js minify-css"
   },
   "author": "Sofronov Michail",
   "license": "ISC",
