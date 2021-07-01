@@ -1,4 +1,4 @@
-export default {
+const config = {
   clearMocks: true,
   testEnvironment: 'jsdom',
 };
